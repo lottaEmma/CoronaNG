@@ -1,9 +1,13 @@
 /* @type {import('tailwindcss').Config} */
+const colors = require('tailwindcss/colors') 
 module.exports = {
   content: ["./src/**.{html,js}",], /*./src/**.{html,js}*/
   theme: {
     colors:{
         'uniblue':'#7D9AAA',
+        'black': colors.black, 
+        'white': colors.white, 
+        'emerald': colors.emerald,
     },
 
     extend: {
