@@ -1,9 +1,18 @@
-/** @type {import('tailwindcss').Config} */
+/* @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./src/index.html"], /*./src/**.{html,js}*/
   theme: {
-    extend: {},
-  },
-  plugins: [],
-}
+    colors:{
+        'uniblue':'#7D9AAA',
+    },
 
+    extend: {
+      fontFamily: {
+        mono: ['Inter var'],
+    },
+  },
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
+}
+}
