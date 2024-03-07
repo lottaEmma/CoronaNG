@@ -7,22 +7,34 @@
     <link href="./output.css" rel="stylesheet">
 </head>
 <body>
-    <header class="bg-uniblue">
-        <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
-          <div class="flex lg:flex-1">
-            <a href="dashboard.html" class="-m-1.5 p-1.5">
-              <span class="sr-only">CoronaNG</span>
-              <img class="h-8 w-auto" src="./img/unilogo.jpg" alt="">
-            </a>
-          </div>
-          <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
-          </div>
-        </nav>
-        </div>
-    </header>
-   <!-- component -->
-<div>
+   <!--header-->
+		<header class="bg-uniblue max-h-16">
+			<div class="mx-96 grid grid-cols-12 gap-5"> <!--Die Buttons sollen eigentlich mittig aufs grid und nicht an der linken seite von der column hängen-->
+				<div class="cols-span-1 my-1 h-12"> <!--Schrift und logo sollen eigentlich direkt nebeneinander aber ka warum dat nich geht... -->
+					<img class="h-12 w-auto" src="./img/unilogo.png" alt="unilogo">
+				</div>
+				<div class="cols-span-2 h-12 my-4">
+					<a href="dashboard.html" class="text-white text-xl font-semibold">CoronaNG</a>
+				</div>
+				<button class="border border-white hover:bg-gray-400 py-2 px-4 rounded inline-flex items-center col-span-1 col-start-9 object-contain h-11 w-14 my-2">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="white" class="w-6 h-6">
+					  <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+					</svg>
+				  </button>
+				  <button class="border border-white hover:bg-gray-400 py-2 px-4 rounded inline-flex items-center col-span-1 col-start-10 object-contain h-11 w-14 my-2">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="white" class="w-6 h-6">
+					  <path stroke-linecap="round" stroke-linejoin="round" d="m20.25 7.5-.625 10.632a2.25 2.25 0 0 1-2.247 2.118H6.622a2.25 2.25 0 0 1-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
+					</svg>          
+				  </button>
+				<div class="col-span-2 col-start-11 my-2">
+					<button class="border border-white hover:bg-gray-400 py-2 px-4 rounded inline-flex items-center text-white">
+						<p>Max Mustermann</p>          
+					  </button>
+				</div>
+				</div>	
+	  	</header>
+		<!-- component -->
+	<div>
 	<div class="mt-5 mx-96 grid grid-cols-12 gap-10">
 		<div class="col-span-8 col-start-3">
 			<div class="relative mt-2 rounded-md shadow-sm">
@@ -416,3 +428,15 @@
       
 </body>
 </html>
+
+<style>
+	.btn {
+	  @apply font-bold py-2 px-4 rounded;
+	}
+	.btn-blue {
+	  @apply bg-blue-500 text-white;
+	}
+	.btn-blue:hover {
+	  @apply bg-blue-700;
+	}
+  </style>
