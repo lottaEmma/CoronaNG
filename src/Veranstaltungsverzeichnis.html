@@ -19,67 +19,270 @@
             <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
           </div>
         </nav>
-        <!-- Mobile menu, show/hide based on menu open state. -->
-        <div class="lg:hidden" role="dialog" aria-modal="true">
-          <!-- Background backdrop, show/hide based on slide-over state. -->
-          <div class="fixed inset-0 z-10"></div>
-          <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-            <div class="flex items-center justify-between">
-              <a href="#" class="-m-1.5 p-1.5">
-                <span class="sr-only">CoronaNG</span>
-                <img class="h-8 w-auto" src="./img/unilogo.jpg" alt="">
-              </a>
-              <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
-                <span class="sr-only">Close menu</span>
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-            </div>
-            <div class="mt-6 flow-root">
-              <div class="-my-6 divide-y divide-gray-500/10">
-                <div class="py-6">
-                  <a href="dashboard.html" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</a>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </header>
+    </header>
    <!-- component -->
-<div class="max-w-screen-xl mx-auto px-5 bg-white min-h-sceen">
-	<div class="flex flex-col items-center">
-		<h2 class="font-bold text-5xl mt-5 tracking-tight">
-			FAQ
-		</h2>
-		<p class="text-neutral-500 text-xl mt-3">
-			Frequenty asked questions
-		</p>
-	</div>
-	<div class="grid divide-y divide-neutral-200 max-w-xl mx-auto mt-8">
-		<div class="py-5">
+<div>
+	<div class="mt-5 mx-96 grid grid-cols-12 gap-10">
+		<div class="col-span-8 col-start-3">
+			<div class="relative mt-2 rounded-md shadow-sm">
+			<input type="text" name="price" id="price" class="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Kurse suchen">
+			<div class="absolute inset-y-0 right-0 flex items-center">
+				<label for="filter" class="sr-only">Filter</label>
+				<select id="filter" name="filter" class="h-full rounded-md border-0 bg-transparent py-0 pl-2 pr-7 text-gray-500 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm">
+				<option>USD</option>
+				<option>CAD</option>
+				<option>EUR</option>
+				</select>
+			</div>
+			</div>
+		</div>
+  
+		<p class="font-bold col-start-3">Veranstaltungen</p>
+		<!-- ASQ -->
+		<div class="col-span-10 col-start-3">
 			<details class="group">
-				<summary class="flex justify-between items-center font-medium cursor-pointer list-none">
-					<span> What is a SAAS platform?</span>
-					<span class="transition group-open:rotate-180">
-                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
-</svg>
-              </span>
+				<summary class="flex items-center font-medium cursor-pointer list-none">
+					<span class="transition group-open:rotate-270">
+						<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+						</svg>
+					  </span>
+					<span>Addaptive Schlüsselqualifikationen (ASQ)</span>
 				</summary>
-				<p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
-					 SAAS platform is a cloud-based software service that allows users to access
-					and use a variety of tools and functionality.
-				</p>
+				<div class="text-neutral-600 mt-3 ml-20 group-open:animate-fadeIn">
+				<!-- untermenü ASQ -->
+					<div class="grid grid-cols-subgrid gap-4">
+						<!-- Basis -->
+						<div class="py-5">
+						<details class="group2">
+							<summary class="flex items-center font-medium cursor-pointer list-none">
+								<span class="transition group2-open:rotate-180">
+									<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+									</svg>
+								</span>
+								<span>Basiskompetenzen</span>
+							</summary>
+							<div class="text-neutral-600 mt-3 group2-open:animate-fadeIn">
+								<!-- untermenü BasisASQ -->
+								<div class="grid grid-cols-subgrid gap-4 col-span-3">
+									<div class="py-5">
+										<details class="group2">
+											<summary class="flex items-center font-medium cursor-pointer list-none">
+												<span class="flex items-center font-medium cursor-pointer list-none">
+													<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+														<path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+														<path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+														</svg>
+														
+												</span>
+											<span>Analyse und Entscheidungsfindung - Die Praxis ganzheitlichen Entscheidens</span>
+											</summary>
+										</details>
+									</div>
+									<div class="py-5">
+										<details class="group2">
+											<summary class="flex items-center font-medium cursor-pointer list-none">
+												<span class="transition group2-open:rotate-180">
+													<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+														<path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+														<path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+														</svg>
+														
+												</span>
+												<span>Berufsstart: Das richtige Werkzeug für einen smarten Start </span>
+											</summary>
+										</details>
+									</div>
+									<div class="py-5">
+										<details class="group2">
+											<summary class="flex items-center font-medium cursor-pointer list-none">
+												<span class="transition group2-open:rotate-180">
+													<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+														<path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+														<path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+														</svg>
+														
+												</span>
+												<span>Leiblichkeit und Selbstsorge (Body&Soul)</span>
+											</summary>
+										</details>
+									</div>
+									<div class="py-5">
+										<details class="group2">
+											<summary class="flex items-center font-medium cursor-pointer list-none">
+												<span class="transition group2-open:rotate-180">
+													<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+														<path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+														<path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+														</svg>
+														
+												</span>
+												<span>Meine Wirkung auf andere: Selbstbild und Fremdbild </span>
+											</summary>
+										</details>
+									</div>
+									<div class="py-5">
+										<details class="group2">
+											<summary class="flex items-center font-medium cursor-pointer list-none">
+												<span class="transition group2-open:rotate-180">
+													<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+														<path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+														<path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+														</svg>
+														
+												</span>
+												<span>Projektmanagement: Von der ersten Idee zum erfolgreichen Abschluss </span>
+											</summary>
+										</details>
+									</div>
+								</div>
+							</div>
+						</details>
+						</div>
+						<!--Sprachen -->
+						<div class="py-5">
+						<details class="group2">
+							<summary class="flex items-center font-medium cursor-pointer list-none">
+								<span class="transition group2-open:rotate-180">
+									<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+									</svg>
+								</span>
+								<span>Fremdsprache und Interkulturelle Kompetenz</span>
+							</summary>
+							<p class="text-neutral-600 mt-3 group2-open:animate-fadeIn">
+								We may offer discounts or promotions from time to time. To stay up-to-date on the latest
+								deals and special offers, you can sign up for the company's newsletter or follow it on social media.
+							</p>
+						</details>
+						</div>
+						<!-- Medien -->
+						<div class="py-5">
+						<details class="group2">
+							<summary class="flex items-center font-medium cursor-pointer list-none">
+								<span class="transition group2-open:rotate-180">
+									<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+									</svg>
+								</span>
+								<span>Medienkompetenz</span>
+							</summary>
+							<div class="grid grid-cols-subgrid gap-4 col-span-3">
+								<div class="py-5">
+									<details class="group2">
+										<summary class="flex items-center font-medium cursor-pointer list-none">
+											<span class="ml-2">
+												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+													<path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+													<path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+													</svg> 
+											</span>
+										<span>Animationsfilme erstellen </span>
+										</summary>
+									</details>
+								</div>
+								<div class="py-5">
+									<details class="group2">
+										<summary class="flex items-center font-medium cursor-pointer list-none">
+											<span class="transition group2-open:rotate-180">
+												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+													<path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+													<path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+													</svg>
+													
+											</span>
+											<span>Einführung in die Medienethik</span>
+										</summary>
+									</details>
+								</div>
+								<div class="py-5">
+									<details class="group2">
+										<summary class="flex items-center font-medium cursor-pointer list-none">
+											<span class="transition group2-open:rotate-180">
+												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+													<path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+													<path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+													</svg>
+													
+											</span>
+											<span>Begeisternd Präsentieren: In Präsentationen überzeugen und in Erinnerung bleiben</span>
+										</summary>
+									</details>
+								</div>
+								<div class="py-5">
+									<details class="group2">
+										<summary class="flex items-center font-medium cursor-pointer list-none">
+											<span class="transition group2-open:rotate-180">
+												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+													<path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+													<path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+													</svg>
+													
+											</span>
+											<span> Kreatives Arbeiten mit Filmgenres</span>
+										</summary>
+									</details>
+								</div>
+								<div class="py-5">
+									<details class="group2">
+										<summary class="flex items-center font-medium cursor-pointer list-none">
+											<span class="transition group2-open:rotate-180">
+												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+													<path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+													<path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+													</svg>
+													
+											</span>
+											<span>Möglichkeiten der kollaborativen Texterstellung in digitalen Zeiten. Vom Blog zum E-Book</span>
+										</summary>
+									</details>
+								</div>
+							</div>
+						</details>
+						</div>
+						<!-- Orientierung -->
+						<div class="py-5">
+						<details class="group2">
+							<summary class="flex items-center font-medium cursor-pointer list-none">
+								<span class="transition group2-open:rotate-180">
+									<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+									</svg>
+								</span>
+								<span>Orientierungskompetenz</span>
+							</summary>
+							<p class="text-neutral-600 mt-3 group2-open:animate-fadeIn">
+								We may offer discounts or promotions from time to time. To stay up-to-date on the latest
+								deals and special offers, you can sign up for the company's newsletter or follow it on social media.
+							</p>
+						</details>
+						</div>
+						<!-- Praxis -->
+						<div class="py-5">
+						<details class="group2">
+							<summary class="flex items-center font-medium cursor-pointer list-none">
+								<span class="transition group2-open:rotate-180">
+									<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+									</svg>
+								</span>
+								<span>Praxiskompetenzen</span>
+							</summary>
+							<p class="text-neutral-600 mt-3 group2-open:animate-fadeIn">
+								We may offer discounts or promotions from time to time. To stay up-to-date on the latest
+								deals and special offers, you can sign up for the company's newsletter or follow it on social media.
+							</p>
+						</details>
+						</div>
+					</div>
+				</div>
 			</details>
 		</div>
-		<div class="py-5">
+		<!-- Fak Ing Inf Psy -->
+		<div class="col-span-10 col-start-3">
 			<details class="group">
-				<summary class="flex justify-between items-center font-medium cursor-pointer list-none">
-					<span> How does  billing work?</span>
+				<summary class="flex items-center font-medium cursor-pointer list-none">
 					<span class="transition group-open:rotate-180">
-                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
-</svg>
-              </span>
+						<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+						</svg>
+					  </span>
+					<span> Fakultät für Ingenieurwissenschaften, Informatik und Psychologie</span>
 				</summary>
 				<p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
 					We offers a variety of billing options, including monthly and annual subscription plans,
@@ -88,14 +291,15 @@
 				</p>
 			</details>
 		</div>
-		<div class="py-5">
+		<!-- Fak Math Wiwi -->
+		<div class="col-span-10 col-start-3">
 			<details class="group">
-				<summary class="flex justify-between items-center font-medium cursor-pointer list-none">
-					<span> Can I get a refund for my subscription?</span>
+				<summary class="flex items-center font-medium cursor-pointer list-none">
 					<span class="transition group-open:rotate-180">
-                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
-</svg>
-              </span>
+						<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+						</svg>
+					</span>
+					<span>Fakultät für Mathematik und Wirtschaftswissenschaften </span>
 				</summary>
 				<p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
 					We offers a 30-day money-back guarantee for most of its subscription plans. If you are not
@@ -105,14 +309,15 @@
 				</p>
 			</details>
 		</div>
-		<div class="py-5">
+		<!-- Fak Navi -->
+		<div class="col-span-10 col-start-3">
 			<details class="group">
-				<summary class="flex justify-between items-center font-medium cursor-pointer list-none">
-					<span> How do I cancel my subscription?</span>
+				<summary class="flex items-center font-medium cursor-pointer list-none">
 					<span class="transition group-open:rotate-180">
-                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
-</svg>
-              </span>
+						<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+						</svg>
+					</span>
+					<span>Fakultät für Naturwissenschaften</span>
 				</summary>
 				<p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
 					To cancel your We subscription, you can log in to your account and navigate to the
@@ -121,14 +326,15 @@
 				</p>
 			</details>
 		</div>
-		<div class="py-5">
+		<!-- Humbolt -->
+		<div class="col-span-10 col-start-3">
 			<details class="group">
-				<summary class="flex justify-between items-center font-medium cursor-pointer list-none">
-					<span> Can I try this platform for free?</span>
+				<summary class="flex items-center font-medium cursor-pointer list-none">
 					<span class="transition group-open:rotate-180">
-                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
-</svg>
-              </span>
+						<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+						</svg>
+					</span>
+					<span>Humboldt-Zentrum</span>
 				</summary>
 				<p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
 					We offers a free trial of its  platform for a limited time. During the trial period,
@@ -136,14 +342,16 @@
 				</p>
 			</details>
 		</div>
-		<div class="py-5">
+		<!-- kiz -->
+		<div class="col-span-10 col-start-3">
 			<details class="group">
-				<summary class="flex justify-between items-center font-medium cursor-pointer list-none">
-					<span> How do I access   documentation?</span>
+				<summary class="flex items-center font-medium cursor-pointer list-none">
 					<span class="transition group-open:rotate-180">
-                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
-</svg>
-              </span>
+						<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+						</svg>
+					</span>
+					<span>Kommunikations- und Informationszentrum (kiz)</span>
+					
 				</summary>
 				<p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
 					  Documentation is available on the company's website and can be accessed by
@@ -152,14 +360,15 @@
 				</p>
 			</details>
 		</div>
-		<div class="py-5">
+		<!-- Lehramt -->
+		<div class="col-span-10 col-start-3">
 			<details class="group">
-				<summary class="flex justify-between items-center font-medium cursor-pointer list-none">
-					<span> How do I contact support?</span>
+				<summary class="flex items-center font-medium cursor-pointer list-none">
 					<span class="transition group-open:rotate-180">
-                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
-</svg>
-              </span>
+						<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+						</svg>
+					</span>
+					<span>Lehramtsstudiengänge</span>
 				</summary>
 				<p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
 					If you need help with the platform or have any other questions, you can contact the
@@ -168,14 +377,15 @@
 				</p>
 			</details>
 		</div>
-		<div class="py-5">
+		<!-- Medi -->
+		<div class="col-span-10 col-start-3">
 			<details class="group">
-				<summary class="flex justify-between items-center font-medium cursor-pointer list-none">
-					<span> Do you offer any discounts or promotions?</span>
+				<summary class="flex items-center font-medium cursor-pointer list-none">
 					<span class="transition group-open:rotate-180">
-                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
-</svg>
-              </span>
+						<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+						</svg>
+					</span>
+					<span>Medizinische Fakultät</span>
 				</summary>
 				<p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
 					We may offer discounts or promotions from time to time. To stay up-to-date on the latest
@@ -183,14 +393,15 @@
 				</p>
 			</details>
 		</div>
-		<div class="py-5">
+		<!-- Philo -->
+		<div class="col-span-10 col-start-3">
 			<details class="group">
-				<summary class="flex justify-between items-center font-medium cursor-pointer list-none">
-					<span> How do we compare to other similar services?</span>
+				<summary class="flex items-center font-medium cursor-pointer list-none">
 					<span class="transition group-open:rotate-180">
-                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
-</svg>
-              </span>
+						<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+						</svg>
+					  </span>
+					<span>Zentrum für Sprachen und Philologie</span>
 				</summary>
 				<p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
 					 This platform is a highly reliable and feature-rich service that offers a wide range

@@ -15,6 +15,9 @@ module.exports = {
         mono: ['Inter var'],
     },
     extend: {
+      rotate: {
+        '270': '270deg',
+      },
          keyframes: {
            fadeIn: {
              "0%": { opacity: 0 },
