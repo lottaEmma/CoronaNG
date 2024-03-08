@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoronaNG</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+    <!--header-->
+		<header class="bg-uniblue max-h-16">
+			<div class="mx-96 grid grid-cols-12 gap-5"> <!--Die Buttons sollen eigentlich mittig aufs grid und nicht an der linken seite von der column hängen-->
+				<div class="cols-span-1 my-1 h-12"> <!--Schrift und logo sollen eigentlich direkt nebeneinander aber ka warum dat nich geht... -->
+					<img class="h-12 w-auto" src="./img/unilogo.png" alt="unilogo">
+				</div>
+				<div class="cols-span-2 h-12 my-4">
+					<a href="dashboard.html" class="text-white text-xl font-semibold">CoronaNG</a>
+				</div>
+				<button class="border border-white hover:bg-gray-400 py-2 px-4 rounded inline-flex items-center col-span-1 col-start-9 object-contain h-11 w-14 my-2">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="white" class="w-6 h-6">
+					  <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+					</svg>
+				  </button>
+				  <button class="border border-white hover:bg-gray-400 py-2 px-4 rounded inline-flex items-center col-span-1 col-start-10 object-contain h-11 w-14 my-2">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="white" class="w-6 h-6">
+					  <path stroke-linecap="round" stroke-linejoin="round" d="m20.25 7.5-.625 10.632a2.25 2.25 0 0 1-2.247 2.118H6.622a2.25 2.25 0 0 1-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
+					</svg>          
+				  </button>
+				<div class="col-span-2 col-start-11 my-2">
+					<button class="border border-white hover:bg-gray-400 py-2 px-4 rounded inline-flex items-center text-white">
+						<p>Max Mustermann</p>          
+					  </button>
+				</div>
+				</div>	
+	  	</header>
+
+      <div class="mx-96 grid grid-cols-12 gap-10">
+        <div class="col-span-8 pt-6">
+          <div>
+            <p class="text-xl font-bold">Beobachten</p>
+          <p class="text-lg font-medium mt-5">Addaptive Schlüsselqualifikationen</p>
+          <label>
+            <input type="checkbox" unchecked class="m-1"> Analyse und Entscheidungsfindung - Die Praxis ganzheitlichen Entscheidens <br>
+          </label>
+          <label>
+            <input type="checkbox" unchecked class="m-1"> Leiblichkeit und Selbstsorge (Body&Soul)<br>
+          </label>
+          <label>
+            <input type="checkbox" unchecked class="m-1"> Business Instinct - wie deine Ideen die Welt verändern können<br>
+          </label>
+          <label>
+            <input type="checkbox" unchecked class="m-1"> Chinesische Sprache und Kultur II (A1)<br>
+          </label>
+          <label>
+            <input type="checkbox" unchecked class="m-1"> <p class="text-lg font-medium mt-5">Fakultät für Ingenieurwissenschaften, Informatik und Psychologie</p> <!--Die ckeckbox soll eigentlich vor ing inf psych-->
+          </label>
+            
+            <label>
+              <input type="checkbox" unchecked class="m-1"> Driver-Vehicle Interaction<br>
+            </label>
+            <label>
+              <input type="checkbox" unchecked class="m-1">Cognition in Complex Situations<br>
+            </label>
+            <label>
+              <input type="checkbox" unchecked class="m-1">Introduction to Human Neuroanatomy<br>
+            </label>
+            <label>
+              <input type="checkbox" unchecked class="m-1"> Multisensory Perception for Action<br>
+            </label>
+          <hr class="h-px my-8 bg-uniblue border-0 dark:bg-gray-700">
+          <p class="text-xl font-bold">Teilnehmen</p>
+          <p class="text-lg font-medium mt-5">Addaptive Schlüsselqualifikationen</p>
+            <p class="mt-5"><ul>
+              Analyse und Entscheidungsfindung - Die Praxis ganzheitlichen Entscheidens<br>
+              Leiblichkeit und Selbstsorge (Body&Soul)<br>
+              Business Instinct - wie deine Ideen die Welt verändern können<br>
+              Chinesische Sprache und Kultur II (A1)
+              </ul> </p>
+              <p class="text-lg font-medium mt-5">Fakultät für Ingenieurwissenschaften, Informatik und Psychologie</p>
+            <p class="mt-5"><ul>
+              Driver-Vehicle Interaction<br>
+              Cognition in Complex Situations<br>
+              Introduction to Human Neuroanatomy<br>
+              Multisensory Perception for Action
+              </ul> </p>
+            <hr class="h-px my-8 bg-uniblue border-0 dark:bg-gray-700">
+            <div class="mb-10">
+              <b class="my-5">Veranstaltungen</br></b>
+              <a href="Veranstaltungsverzeichnis.html" class="text-uniblue">Wintersemester 2024/25</a> </br>
+              <a href="Veranstaltungsverzeichnis.html" class="text-uniblue">Sommersemester 2024</a></br>
+              <a href="Veranstaltungsverzeichnis.html" class="text-uniblue">Wintersemester 2023/24</a></br>
+              <a href="Kurs.html" class="text-uniblue">Sommersemester 2023</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-4 pt-6">
+          <div class=" border-t-4 border-teal-500 rounded-b text-uniblue px-4 py-3 shadow-md" role="alert">
+            <div class="flex">
+              <div class="py-1"><svg class="fill-current h-6 w-6 text-uniblue mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"/></svg></div>
+              <div>
+                <p class="font-bold">Hinweise</p>
+                <p class="text-sm">Einschreibungsöffnung am 16.10.2023:
+                  </br>
+                  </br>16.00 Uhr: ASQ Fremdsprachen (nur Englischkurse)
+                  </br> 
+                  </br>16.30 Uhr: ASQ Fremdsprachen und alle weiteren Angebote des Sprachenzentrums
+                  </br> 
+                  </br>17.00 Uhr: ASQ Basis-, Praxis-, Orientierungs- und Medienkompetenz; Schule und Bildung / alle Kurse des Humboldt-Zentrums</p>
+              </div>
+            </div>
+          </div>
+          </div>
+      </div>
+      <footer class="bg-uniblue">
+        <nav>
+          <a class="link link-hover ml-96 mr-5">Helpdesk</a>
+          <a class="link link-hover mx-5">FAQ</a>
+          <a class="link link-hover mx-5">Ansprechpartner</a>
+        </nav>
+      </footer>
+</body>
+</html>
+
+<style>
+  .btn {
+    @apply font-bold py-2 px-4 rounded;
+  }
+  .btn-blue {
+    @apply bg-blue-500 text-white;
+  }
+  .btn-blue:hover {
+    @apply bg-blue-700;
+  }
+</style>
